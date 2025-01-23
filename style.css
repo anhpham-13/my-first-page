@@ -23,13 +23,33 @@ h2 {
 }
 
 
-li {
-    display: inline-block;
-    width: 150px;
-    margin: 5px;
-    text-align: center;
-    background-color: #cc8f66; 
-    padding: 10px;
+/* Style danh sách các địa điểm */
+ul {
+    display: flex; /* Sử dụng Flexbox */
+    flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ chỗ */
+    justify-content: center; /* Căn giữa danh sách */
+    list-style-type: none; /* Bỏ dấu đầu dòng */
+    padding: 0; /* Bỏ padding mặc định */
+    margin: 20px 0;
+}
+
+/* Style từng mục trong danh sách */
+ul li {
+    background-color: #d5a56d; /* Màu nền nâu nhạt */
+    color: #fff; /* Màu chữ trắng */
+    padding: 15px 20px; /* Tăng khoảng cách bên trong */
+    margin: 10px; /* Khoảng cách giữa các mục */
+    border-radius: 8px; /* Góc bo tròn */
+    font-size: 16px; /* Kích thước chữ */
+    text-align: center; /* Căn giữa chữ */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Hiệu ứng khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* Hiệu ứng hover cho các mục */
+ul li:hover {
+    transform: scale(1.1); /* Phóng to nhẹ */
+    background-color: #b58351; /* Màu nền đậm hơn khi hover */
 }
 
 
