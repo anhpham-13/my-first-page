@@ -22,69 +22,71 @@ h2 {
     text-align: center;
 }
 
+
 ul, ol {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  position: relative;
 }
 
 ul::before, ul::after, ol::before, ol::after {
-    content: '';
-    position: absolute;
-    top: -20px;
-    width: 90%;
-    height: 2px;
-    background-color: #b58351;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 90%;
+  height: 2px;
+  background-color: #b58351;
+  z-index: -1;
 }
 
 ul::before, ol::before {
-    left: 5%;
+  left: 5%;
 }
 
 ul::after, ol::after {
-    right: 5%;
+  right: 5%;
 }
 
 ul li, ol li {
-    background-color: #d5a56d;
-    color: #fff;
-    padding: 15px 20px;
-    margin: 20px 15px;
-    border-radius: 8px;
-    font-size: 16px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transform: rotate(-5deg);
-    transition: transform 0.3s ease;
+  background-color: #d5a56d;
+  color: #fff;
+  padding: 15px 20px;
+  margin: 20px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
 }
 
 ul li:nth-child(even), ol li:nth-child(even) {
-    transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 ul li::before, ol li::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: #b58351;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #b58351;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 ul li:hover, ol li:hover {
-    transform: scale(1.1) rotate(0deg);
-    z-index: 1;
+  transform: scale(1.1) rotate(0deg);
+  z-index: 1;
 }
+
 
 
 p {
