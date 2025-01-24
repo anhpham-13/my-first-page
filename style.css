@@ -1,27 +1,28 @@
-
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
-
 
 h1 {
-    background-color: #14d8db; 
-    color: #d76609;
-    padding: 20px;
-    text-align: center;
+  background-color: #14d8db; 
+  color: #d76609;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 h2 {
-    background-color: #914040; 
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: #914040; 
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 ul, ol {
   display: flex;
@@ -31,6 +32,7 @@ ul, ol {
   padding: 0;
   margin: 20px 0;
   position: relative;
+  gap: 30px;
 }
 
 ul::before, ul::after, ol::before, ol::after {
@@ -52,7 +54,7 @@ ul::after, ol::after {
 }
 
 ul li, ol li {
-  background-color: #d5a56d;
+  background: linear-gradient(135deg, #d5a56d, #b58351);
   color: #fff;
   padding: 15px 20px;
   margin: 20px 15px;
@@ -62,7 +64,7 @@ ul li, ol li {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   transform: rotate(-5deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 ul li:nth-child(even), ol li:nth-child(even) {
@@ -85,11 +87,36 @@ ul li::before, ol li::before {
 ul li:hover, ol li:hover {
   transform: scale(1.1) rotate(0deg);
   z-index: 1;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
+.image-item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .image-item {
+      flex: 1 1 100%;
+  }
+}
 
 p {
-    line-height: 1.6; 
-    color: #555; 
+  color: #333; 
 }
