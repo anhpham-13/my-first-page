@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background-image: url('https://i.ytimg.com/vi/rG3aZznMIm8/maxresdefault.jpg'); /* Đường dẫn tới ảnh lá cờ */
+  background-image: url("https://i.ytimg.com/vi/rG3aZznMIm8/maxresdefault.jpg"); /* Đường dẫn tới ảnh lá cờ */
   background-size: cover; /* Ảnh phủ toàn bộ màn hình */
   background-position: center; /* Ảnh căn giữa */
   background-repeat: no-repeat; /* Không lặp lại ảnh */
