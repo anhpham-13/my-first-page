@@ -2,43 +2,30 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 0;body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
   padding: 0;
   line-height: 1.6;
-}
-
-body {
-  background-image: url("https://i.ytimg.com/vi/rG3aZznMIm8/maxresdefault.jpg"); /* Đường dẫn tới ảnh lá cờ */
-  background-size: cover; /* Ảnh phủ toàn bộ màn hình */
-  background-position: center; /* Ảnh căn giữa */
-  background-repeat: no-repeat; /* Không lặp lại ảnh */
-  background-attachment: scroll; 
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  background-image: url("https://i.ytimg.com/vi/rG3aZznMIm8/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 
 body::before {
-  content: ''; /* Lớp phủ mờ */
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* Màu phủ trắng với độ mờ 50% */
-  z-index: -1; /* Đặt phía sau nội dung */
-  pointer-events: none; /* Không ảnh hưởng tới tương tác */
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  pointer-events: none;
 }
 
-
 h1 {
-  background-color: #14d8db; 
+  background-color: #14d8db;
   color: #d76609;
   padding: 20px;
   text-align: center;
@@ -47,7 +34,7 @@ h1 {
 }
 
 h2 {
-  background-color: #914040; 
+  background-color: #914040;
   color: white;
   padding: 10px;
   text-align: center;
@@ -66,24 +53,6 @@ ul, ol {
   gap: 30px;
 }
 
-ul::before, ul::after, ol::before, ol::after {
-  content: '';
-  position: absolute;
-  top: -20px;
-  width: 90%;
-  height: 2px;
-  background-color: #b58351;
-  z-index: -1;
-}
-
-ul::before, ol::before {
-  left: 5%;
-}
-
-ul::after, ol::after {
-  right: 5%;
-}
-
 ul li, ol li {
   background: linear-gradient(135deg, #d5a56d, #b58351);
   color: #fff;
@@ -100,19 +69,6 @@ ul li, ol li {
 
 ul li:nth-child(even), ol li:nth-child(even) {
   transform: rotate(5deg);
-}
-
-ul li::before, ol li::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  background-color: #b58351;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 ul li:hover, ol li:hover {
@@ -149,123 +105,5 @@ ul li:hover, ol li:hover {
 }
 
 p {
-  color: #333; 
-}
-
-  line-height: 1.6;
-}
-
-h1 {
-  background-color: #14d8db; 
-  color: #d76609;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  background-color: #914040; 
-  color: white;
-  padding: 10px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-ul, ol {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0;
-  position: relative;
-  gap: 30px;
-}
-
-ul::before, ul::after, ol::before, ol::after {
-  content: '';
-  position: absolute;
-  top: -20px;
-  width: 90%;
-  height: 2px;
-  background-color: #b58351;
-  z-index: -1;
-}
-
-ul::before, ol::before {
-  left: 5%;
-}
-
-ul::after, ol::after {
-  right: 5%;
-}
-
-ul li, ol li {
-  background: linear-gradient(135deg, #d5a56d, #b58351);
-  color: #fff;
-  padding: 15px 20px;
-  margin: 20px 15px;
-  border-radius: 8px;
-  font-size: 16px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-  transform: rotate(-5deg);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-ul li:nth-child(even), ol li:nth-child(even) {
-  transform: rotate(5deg);
-}
-
-ul li::before, ol li::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px;
-  background-color: #b58351;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-ul li:hover, ol li:hover {
-  transform: scale(1.1) rotate(0deg);
-  z-index: 1;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.image-item {
-  flex: 1 1 calc(33.333% - 20px);
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.image-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .image-item {
-      flex: 1 1 100%;
-  }
-}
-
-p {
-  color: #333; 
+  color: #333;
 }
